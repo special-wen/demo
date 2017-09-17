@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1px" width="100%"  style="margin: auto;height: 100px" id = "table">
+    <tbody>
+    <tr>
+        <td>一行一列</td>
+        <td>两行一列</td>
+    </tr>
+    <tr>
+        <td>一行两列</td>
+        <td>两行两列</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    var tab = document.getElementById('table');
+
+    oneRow = tab.insertRow();
+    oneCell = oneRow.insertCell();
+    otherCell = oneRow.insertCell();
+
+    oneCell.innerText = "new cell";
+    otherCell.innerText = "new cell";
+
+</script>
+</body>
+</html>
