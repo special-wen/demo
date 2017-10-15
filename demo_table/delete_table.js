@@ -42,7 +42,7 @@ function allDel() {
 function delCol() {
     let table = document.getElementById('table');
     let len = table.rows.length;
-
+    alert(len);
     //删除指定的位置
     // table.rows[2].deleteCell(1);
 
