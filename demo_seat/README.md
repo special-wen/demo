@@ -129,8 +129,7 @@ change.onclick = function changeState() {
 	   }
 }
 ```
->完整代码实现：
-https://github.com/special-wen/java_web/blob/master/System_manager/javascript/seat.js
+>完整代码实现：https://github.com/special-wen/demo/tree/master/demo_seat
 
 
 
