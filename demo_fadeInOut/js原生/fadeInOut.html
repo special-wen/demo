@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js原生实现淡入淡出</title>
+    <link rel="stylesheet" href="./fadeInOut.css" type="text/css">
+</head>
+<body>
+    <div id = "demo">
+        <div class="box">
+            <button id = "In">点击淡入</button>
+            <div id="fadeIn">
+                <p>之前什么都没有</p>
+                <p>我是淡入进来的东西</p>
+                <p>使用原生js实现</p>
+            </div>
+        </div>
+        <div class="box">
+            <button id = "Out">点击淡出</button>
+            <div id="fadeOut">
+                <p>点击“点击淡出”按钮</p>
+                <p>我就会消失不见了</p>
+                <p>不信你可以试试啊</p>
+            </div>
+        </div>
+        <div class="box">
+            <button id = "To">点击淡出至指定透明度</button>
+            <div id = "fadeTo">
+                <p>我会变淡</p>
+                <p>但我不会消失</p>
+                <p>你依然可以看到我</p>
+            </div>
+        </div>
+    </div>
+    <script src="./fadeInOut.js"></script>
+</body>
+</html>

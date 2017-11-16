@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    float: left;
+    margin: 100px;
+    border: 1px solid #5bc0de;
+    width: 240px;
+    height: 100px;
+    text-align: center;
+
+}
+
+#fadeIn{
+    display: none;
+}
+
