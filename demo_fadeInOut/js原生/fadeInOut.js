@@ -1,4 +1,3 @@
-
 window.onload = function () {
     function fadeIn(ele,speed,opacity){
         //ele需要进行淡入的元素
@@ -58,4 +57,3 @@ window.onload = function () {
     }
 
 }
-

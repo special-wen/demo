@@ -1,0 +1,26 @@
+*{
+   margin: 0;
+    padding: 0;
+}
+
+#demo{
+    width: 20%;
+    margin-top: 8%;
+    margin-left: 40%;
+    /*margin: auto;*/
+    border: 1px solid #8fa1c7;
+    text-align: center;
+}
+
+#demo li{
+    list-style: none;
+    font-size: 18px;
+    color: #8fa1c7;
+    transition: opacity 2s;
+    opacity: 0;
+}
+
+#demo li:hover{
+    opacity: 1;
+    transition-duration: 0s;
+}
