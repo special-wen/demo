@@ -23,7 +23,9 @@
 ## css实现
 ### 实现鼠标移入时淡入鼠标移除时淡出
 - transition
+
 #### 利用css3新增的属性transition实现。
+
 ```css
 #demo li{
     list-style: none;
