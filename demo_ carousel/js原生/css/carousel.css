@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#container{
+    width: 600px;
+    height: 400px;
+    border: 1px solid #8fa1c7;
+    position: relative;
+    overflow: hidden;
+}
+
+#image{
+    width: 3600px;
+    height: 400px;
+    position: absolute;
+}
+
+#image img{
+    width: 600px;
+    height: 400px;
+    float: left;
+}
+
+#list{
+    position: absolute;
+    left: 280px;
+    bottom: 20px;
+}
+
+#list li{
+    width: 8px;
+    height: 8px;
+    border: solid 1px slategray;
+    border-radius: 100%;
+    float: left;
+    background:#eee;
+    display: inline-block;
+    margin: 2px;
+}
+
+#list .active{
+    background: black;
+}
+
+
