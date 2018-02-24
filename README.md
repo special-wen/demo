@@ -5,3 +5,4 @@
 ### demo_timer:定时器
 ### demo_fadeInOut:淡入淡出
 ### demo_carousel:轮播图
+### demo_float:浮动引起的问题：清除浮动
