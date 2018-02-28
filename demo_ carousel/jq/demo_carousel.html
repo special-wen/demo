@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="less/slide.css">
+    <link rel="stylesheet" href="less/index.css">
+</head>
+<body>
+<header>
+    <div class="banner">
+        <div id="slide3d" class="slide-carousel slide-3d">
+            <ul  class="item-list clearfix">
+                <li class="item0">
+                    <div class="item-content">
+                        <a href="javascript:void(0);">
+                            <img class="cover-img" src="../js原生/images/book.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li class="item1">
+                    <div class="item-content">
+                        <a href="javascript:void(0);">
+                            <img class="cover-img" src="../js原生/images/pet.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li class="item2">
+                    <div class="item-content">
+                        <a href="javascript:void(0);">
+                            <img class="cover-img" src="../js原生/images/phone.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li class="item3">
+                    <div class="item-content">
+                        <a href="javascript:void(0);">
+                            <img class="cover-img" src="../js原生/images/snacks.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li class="item4">
+                    <div class="item-content">
+                        <a href="javascript:void(0);">
+                            <img class="cover-img" src="../js原生/images/toy.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+                <li class="item5">
+                    <div class="item-content">
+                        <a href="javascript:void(0);">
+                            <img class="cover-img" src="../js原生/images/product.jpg" alt="">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <!--indicators-->
+            <div class="indicator-list">
+                <a href="javascript:void(0);" data-slide-index="0" class="selected"></a>
+                <a href="javascript:void(0);" data-slide-index="1"></a>
+                <a href="javascript:void(0);" data-slide-index="2"></a>
+                <a href="javascript:void(0);" data-slide-index="3"></a>
+                <a href="javascript:void(0);" data-slide-index="4"></a>
+                <a href="javascript:void(0);" data-slide-index="5"></a>
+            </div>
+            <div class="controls">
+                <a  class="item-prev glyphicon glyphicon-menu-left" href="javascript:void(0);"></a>
+                <a  class="item-next glyphicon glyphicon-menu-right" href="javascript:void(0);"></a>
+            </div>
+        </div>
+    </div>
+</header>
+</body>
+</html>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/slide.min.js"></script>
+<script>
+    $(function(){
+        //3d
+        $('#slide3d').slideCarsousel({slideType:'3d',indicatorEvent:'mouseover'});
+    });
+</script>
