@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    var array = [33,45,2,12,23,45,55];
+    function quitSort(arr) {
+        if (arr.length <= 1){
+            return arr;
+        }
+        var len = Math.floor(arr.length/2);
+        var cur = arr.splice(len,1);
+        alert(cur);
+        var left = [];
+        var right = [];
+        for (var i = 0;i<arr.length;i++){
+            if (cur >arr[i]){
+                left.push(arr[i]);
+            }else {
+                right.push(arr[i]);
+            }
+        }
+        return quitSort(left).concat(cur,quitSort(right));
+
+    }
+    console.log(quitSort(array));
+</script>
+</html>

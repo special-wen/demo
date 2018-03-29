@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    function Test() {
+        this.a = "this is test";
+        console.log(this.a);
+        console.log(this);
+    }
+
+    function Test2() {
+        Test.call(this);
+    }
+
+    var test = new Test2();
+</script>
+</html>

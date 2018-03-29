@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #login{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+<div id = "login">
+    <form>
+        手机号：<input type="text" id = "tel">
+        <br/>
+        验证码：<input type="text">
+        <button>获取验证码</button>
+        <br/>
+        <input type="submit">
+    </form>
+</div>
+</body>
+<script>
+    //判断手机号是否输入正确
+    var number = document.getElementById("tel");
+
+    function tel(number) {
+        let num = /^13{0-9}/
+    }
+</script>
+</html>

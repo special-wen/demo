@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>事件冒泡与事件捕获的区别</p>
+<div id = "myDiv">
+    <p id = "myP">点击我，我是事件冒泡</p>
+</div>
+<div id = "myDiv2">
+    <p id = "myP2">点击我，我是事件捕获</p>
+</div>
+</body>
+<script>
+document.getElementById("myP").addEventListener("click",function () {
+    alert("点击了p标签");
+},false);
+
+document.getElementById("myDiv").addEventListener("click",function () {
+    alert("点击了div标签");
+},false);
+
+document.getElementById("myP2").addEventListener("click",function () {
+    alert("点击了p2");
+},true);
+
+document.getElementById("myDiv2").addEventListener("click",function () {
+    alert("点击了div2标签");
+},true)
+</script>
+</html>

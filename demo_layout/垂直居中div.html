@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*方法一*/
+        /*#warp{*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            /*background: grey;*/
+            /*display: table;*/
+        /*}*/
+
+        /*#content{*/
+            /*display: table-cell;*/
+            /*vertical-align: middle;*/
+        /*}*/
+        /*方法二*/
+        /*#warp{*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            /*background: red;*/
+        /*}*/
+
+        /*#content{*/
+            /*position: relative;*/
+            /*top: 50%;*/
+            /*-webkit-transform: translateY(-50%);*/
+        /*}*/
+        /*方法三*/
+        /*#warp{*/
+            /*width: 200px;*/
+            /*height: 100px;*/
+            /*background: blue;*/
+            /*display: flex;*/
+            /*align-items: center;*/
+        /*}*/
+        /*方法四*/
+        #warp{
+            width: 200px;
+            height: 200px;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+<div id = "warp">
+    <div id = "content">垂直居中</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let aaa = [0,1,2,3,4,5,6,7,8,9];
+    for (var i = 0,len = aaa.length;i<len;i++){
+        var rand = parseInt(Math.random()*len);
+        var temp = aaa[rand];
+        aaa[rand] = aaa[i];
+        aaa[i] = temp;
+    }
+    alert(aaa);
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+//    for (var i = 1; i <= 5; i++) {
+//        (function(j) {
+//            setTimeout(function timer() {
+//                console.log(j);
+//            }, j * 1000);
+//        })(i);
+//    }
+
+    let aaa = [1,2,3,4,5,6,7,8,9,10];
+    for (i of aaa){
+        (function (j) {
+            setTimeout(function print() {
+                console.log(j);
+            },j*2000);
+        })(i);
+    }
+
+//    print();
+</script>
+</html>

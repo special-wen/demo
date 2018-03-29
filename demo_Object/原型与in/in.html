@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Person() {
+
+    }
+
+    Person.prototype.name = 'special';
+    Person.prototype.age = 22;
+    Person.prototype.job = "student";
+    Person.prototype.sayName = function () {
+        alert(this.name);
+    };
+
+    var person1 = new Person();
+    var person2 = new Person();
+
+    alert(person1.hasOwnProperty("name"));
+    alert("name" in person1);
+
+    person1.name = "sqlness";
+    alert(person1.name);
+    alert(person1.hasOwnProperty("name"));
+    alert("name" in person1);
+
+    alert(person2.name);
+    alert(person2.hasOwnProperty("name"));
+    alert("name" in person2);
+
+    delete person1.name;
+    alert(person1.name);
+    alert(person1.hasOwnProperty("name"));
+    alert("name" in person1);
+</script>
+</body>
+</html>

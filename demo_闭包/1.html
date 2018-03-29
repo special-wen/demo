@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    function test1(){
+        /**
+         * test1是test2的父函数，而test2被赋给了一个全局变量result，这导致test2始终在内存中
+         * 而test2的存在依赖于test1，因此test1也始终在内存中
+         * 这样test1中的局部变量就不会在调用结束后，被垃圾回收机制回收。
+         */
+        var n=123;
+        // nAdd前面没有var关键字，它是一个全局变量。nAdd的值是一个匿名函数，而这个匿名函数本身也是一个闭包
+        // 它相当于一个setter，可以在函数外部对函数内部的局部变量进行操作。
+        var nAdd = function(){
+            n+=1;
+        }
+        function test2(){
+            nAdd();
+            alert(n);
+        }
+        return test2;
+    }
+    var result=test1();
+    result(); // 123
+    result(); // 124
+</script>
+</html>

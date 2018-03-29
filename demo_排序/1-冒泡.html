@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    function maopao(arra) {
+        var temp;
+        for (var i = 0;i<arra.length;i++){
+            for (var j = 0;j<arra.length-1;j++){
+                if (arra[j] > arra[j+1]){
+                    temp = arra[j];
+                    arra[j] = arra[j+1];
+                    arra[j+1] = temp;
+                }
+            }
+        }
+        return arra;
+    }
+    var array = [33,45,2,12,23,45,55];
+    var s = maopao(array);
+    console.log(s);
+</script>
+</html>
